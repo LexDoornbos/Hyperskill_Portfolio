@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hello, World!</title>
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    </head>
+    <body>
+
+        <header id="home">
+            <div class="hamburger">
+                <div id=hamburgerIco>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+<!--                    <img id="hamburgerIco" src="images/icons8-hamburger-menu-64.png" alt="hamburger menu icon">
+-->
+                </div>
+                <ul id="hamburgerList">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                </ul>
+            </div>
+            <nav class="menu-ribbon">
+                <a class="homeLink" href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contacts">Contact</a>
+            </nav>
+            <h1>Lex Doornbos, Aspiring Java Developer</h1>
+        </header>
+
+        <main>
+            <section id="about">
+                <h2>About me</h2>
+                <div class="flexbox">
+                    <p>dsfgdafgadg dg lkg nskn vislkshbfjksbjhbsjfb kjsb jhb hjh bjhefb jhsb khsbejbjhejhfbjksbhvjhb sfj vhbjb hj bvjk frb jhbsrj,kjsrbkjrbh vkjhsbghb kjhb jhs khb kjvbrfkhb rkjbf jrhbfv jhrbkjh bskjrbh </p>
+                    <img id="profilePict" src="images/profilePict.jpg" alt="My profile picture">
+                </div>
+            </section>
+
+            <section id="portfolio">
+                <h2>Portfolio</h2>
+                <div id="portfolioContainer">
+                        <div class="imgContainer">
+                            <h3>Flashcards project</h3>
+                            <img class="portfolioImage" src="images/flashCardsPict.jpg" alt="My flashcards project">
+                            <button class="open-window" onclick="toggleVisibility1();">More info...</button>
+
+                            <div id="flashcardsInfo" class="window">
+                                <button class="close-button" onclick="toggleVisibility1();">Close</button>
+                                <p>This project was made using HTML, CSS and Javascript.
+                                Getting the animation for the cards to flip over was abit tricky, but it worked out quite nice.</p>
+                            </div>
+                        </div>
+                        <div class="imgContainer">
+                            <h3>Virtual piano project</h3>
+                            <img class="portfolioImage" src="images/virtualPianoPict.jpg" alt="My virtual piano project">
+                            <button class="open-window" onclick="toggleVisibility2();"><span>More info...</span></button>
+
+                            <div id="virtPianoInfo" class="window">
+                                <button class="close-button" onclick="toggleVisibility2();">Close</button>
+                                <p>This project was made using HTML, CSS and Javascript. It was quite fun to do.
+                                I learned about binding keyboard events to playing specific sounds.
+                                </p>
+                                </div>
+                        </div>
+                </div>
+            </section>
+
+            <section id="contacts">
+                <h2>Contacts</h2>
+                <p>You can contact me at: <a href="mailto:--email-address--" target="_blank">--email-address--</a></p>
+                <p>or phone number: <a href="tel:--phone number--">--phone number--</a></p>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Lex Doornbos &copy;2023</p>
+        </footer>
+
+        <script src="script.js" type="application/javascript"></script>
+
+    </body>
+</html>

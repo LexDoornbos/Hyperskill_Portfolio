@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+header{
+    height: 100vh;
+    padding-top: 50px;
+    background-size: contain;
+    background: lightblue url("images/dogDeveloper.png") no-repeat center;
+    line-height: 150px;
+}
+
+main{
+}
+
+footer{
+    background: lightseagreen;
+    border: 2px solid green;
+    height: 2em;
+}
+
+@media screen and (max-width: 900px){
+    .menu-ribbon{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .hamburger{
+        display: none;
+    }
+}
+
+.hamburger{
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    height: 70px;
+    width: 70px;
+    background: slategrey;
+}
+
+.hamburger span{
+    height: 5px;
+    width: 70px;
+    background: darkred;
+    border: 2px solid darkred;
+}
+
+.hamburger ul{
+    list-style: none;
+    visibility: hidden;
+    position: relative;
+    top: -55px;
+}
+
+.hamburger li{
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background: blue;
+    box-shadow: 5px 5px 15px;
+    max-height: 50px;
+    padding: 5px;
+}
+
+.hamburger a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    position: relative;
+    bottom: 55px;
+}
+
+.menu-ribbon{
+    position: fixed;
+    top: 0;
+    right: 20px;
+    height: fit-content;
+    width: fit-content;
+    line-height: normal;
+    z-index: 1;
+}
+
+.homeLink{
+    background: darkorange;
+}
+
+nav a{
+    min-height: 20px;
+    min-width: 300px;
+    background: blue;
+    border-radius: 10px;
+    margin: 0;
+    padding: 7px 20px;
+    color: white;
+    font-size: 1.5em;
+    text-decoration: lightblue;
+    box-shadow: 5px 5px 15px black;
+}
+
+h1{
+    background: rgba(111, 111, 111, .6);
+}
+
+h2{
+}
+
+section{
+    min-height: 100vh;
+    background: burlywood;
+    padding-top: 60px;
+    align-content: center;
+}
+
+#about{
+}
+
+#portfolio{}
+
+#contacts{
+}
+
+#about p{
+    max-width: 600px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+#profilePict{
+    float: right;
+}
+
+#portfolio{
+}
+
+#portfolioContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+/*    align-content: center;*/
+}
+
+.open-window{
+    display: block;
+    position: relative;
+    top: -50px;
+    left: 83%;
+    height: 70px;
+    width: 150px;
+    border-style: dashed;
+    border-radius: 35px;
+    background: darkblue;
+    color: whitesmoke;
+    font: 1.8em whitesmoke;
+    }
+
+.window{
+    display: none;
+    position: relative;
+    bottom: 30vh;
+    left: 10vw;
+    background: antiquewhite;
+    width: 20vw;
+    font-size: 1.4em;
+}
+
+.imgContainer{
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+    height: max-content;
+}
+
+.portfolioImage{
+    width: 35vw ;
+    padding: 0;
+}
+
+.close-button{
+    float: right;
+    font-size: .8em;
+    padding: 7px;
+}
